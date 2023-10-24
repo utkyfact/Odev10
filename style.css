@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 520px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 200px 150px 400px 100px 300px;
+    grid-template-columns: 300px 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    grid-gap: 10px;
+    
+
+    grid-template-areas:
+    'head head'
+    'text resim'
+    'reklam resim'
+    'reklam content'
+    'footer footer'
+    ;
+}
+
+
+nav,header,section,main,.mini,footer{
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+nav{
+    grid-area: head;
+    background-color: blue;
+    /* margin: 10px; */
+    background-image: url(./indir.jpg);
+    background-size: 50% 100%;
+    margin-top: 10px;
+}
+
+header{
+    display: grid;
+    grid-area: text;
+    background-color: green;
+    /* margin: 0px 10px 10px 10px; */
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+/* header .yazi{
+    display: flex;
+} */
+
+section{
+    grid-area: resim;
+    background-color: blue;
+    /* margin: 0px 10px 10px 0px; */
+    background-image: url(./JMV9FwkytUWYWg2BUoVf9g.webp);
+    background-size: 100% 100%;
+}
+
+main{
+    grid-area: reklam;
+    background-color: blue;
+    /* margin: 0px 10px 10px 10px; */
+    background-image: url(./Captain_Marvel_Yeni.jpg);
+    background-size: 100% 100%;
+}
+
+.mini{
+    grid-area: content;
+    background-color: green;
+    /* margin: 0px 10px 10px 0px; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: green;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0px 10px 10px 10px; */
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
